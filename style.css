@@ -1,0 +1,303 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    font-family: 'Merriweather Sans', sans-serif;
+  }
+ 
+  body{
+  margin: 2% 2%;
+  background-color: #22212C;
+  }
+
+  .main{
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 20% 37% 37%;
+    grid-template-rows: 4% 12% 5% 16% 11% 23%;
+    grid-template-areas:
+      "profile myprojects myprojects"
+      "profile postGH-1 postGH-2"
+      "contacts recentPost recentPost"
+      "contacts post post"
+      "tec . ."
+      "exp . ."
+      "edu . .";
+
+      column-gap: 3%;
+      row-gap: 3%;
+
+  }
+
+  .profile{
+    grid-area: profile;
+    border: solid 2px var(--bg-cards);
+    width: 20vw;
+    height: 35vh;
+    min-width:195px ;
+    min-height: 209px;
+    background-color: var(--bg-cards);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+  #fotodoperfil{
+    width:100px ;
+    height:100px ;
+    border-radius: 50%;
+  }
+
+  .profile p {
+    margin: 0px;
+  }
+  
+  .profile h2 {
+    margin-bottom: 5px;
+  }
+  
+  .myprojects {
+    background-color: var(--bg-cards);
+    grid-area: myprojects;
+    border: solid 2px var(--bg-cards);
+    width: 73vw;
+    height: 10vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .myprojects h1{
+   margin-right: 68%;
+   display: flex;
+   font-size: 25px;
+  }
+
+  #VerTodos{
+    justify-content: end;
+    margin-right: 5%;
+    
+  }
+
+  .tamanho ul{
+    list-style: none;
+  }
+
+  #tamanhoIcone{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+  }
+  .contacts p{
+  display: inline;
+  text-align: center;
+  margin: 20px;
+  
+  }
+  .contacts ul{
+    list-style: none;
+    margin: 0px;
+    display: inline;
+  }
+  
+  .contacts {
+    background-color: var(--bg-cards);
+    grid-area: contacts;
+    border: solid 2px var(--bg-cards);
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10px;
+  }
+  
+  .postGH-1 {
+    background-color: var(--bg-cards);
+    grid-area: postGH-1;
+    border: solid 2px var(--bg-cards);
+    width: 35vw;
+    height: 21vh;
+    border-radius: 10px;
+  }
+  .postGH-1 p{
+  display: inline;
+   display: flex;
+   margin: 4px;
+  }
+
+  .figuras{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+
+  .figuras img{
+    margin: 5px;
+  }
+  
+  .postGH-1 h1{
+    font-size: 15px;
+    display: inline;
+    margin: 5px;
+  }
+
+  
+  .postGH-2 {
+    background-color: var(--bg-cards);
+    grid-area: postGH-2;
+    border: solid 2px var(--bg-cards);
+    width: 35vw;
+    height: 21vh;
+    border-radius: 10px;
+  }
+
+  .postGH-2 h1{
+    font-size: 15px;
+    display: inline;
+    margin: 5px;
+  }
+
+  .postGH-2 p{
+  display: inline;
+   display: flex;
+   margin: 4px;
+  }
+  
+  .recentPost {
+    background-color: var(--bg-cards);
+    grid-area: recentPost;
+    border: solid 2px var(--bg-cards);
+    width: 73vw;
+    height: 10vh;
+  border-radius: 10px;
+}
+
+.recentPost h1{
+  font-size: 20px;
+  display: inline;
+  display: flex;
+  justify-items: center;
+  margin-left: 20px;
+}
+
+.post {
+  background-color: var(--bg-cards);
+  grid-area: post;
+  width: 73vw;
+  height: 29vh;
+  border: solid 2px var(--bg-cards);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  
+  
+}
+
+#foto{
+  width: 20vh ;
+  height:20vh ;
+  border-radius: 50%;
+  margin: 30px;
+  
+}
+
+.textodopost{
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  display: inline;
+  
+}
+.post h2{
+  color: var(--text-color);
+}
+
+.tecnologies {
+background-color: var(--bg-cards);
+  grid-area: tec;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 21vh;
+  border-radius: 10px;
+}
+
+.experiences {
+  background-color: var(--bg-cards);
+  grid-area: exp;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 44vh;
+  border-radius: 10px;
+}
+
+.education {
+  background-color: var(--bg-cards);
+  grid-area: edu;
+  border: solid 2px var(--bg-cards);
+  width: 20vw;
+  height: 56vh;
+  border-radius: 10px;
+}
+
+.educacaoli{
+  justify-content: center;
+  text-align: center;
+  
+}
+
+ul{
+  width: 20px;
+  height: 20px;
+  color: var(--text-color);
+ 
+}
+
+a,p,h1{
+  color: var(--text-color);
+}
+
+.tecnologiasesquerda ul{
+  list-style: none;
+  padding: 0%;
+}
+
+.tecnologiasp{
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.tecnologiasp p{
+  background-color: var(--bg-techs);
+  margin: 2px;
+  border-radius: 10px;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+ 
+}
+.tecnologies h1{
+  font-size: 15px;
+}
+
+.experienciasli{
+text-align: center;
+justify-content: center;
+margin: 25px;
+margin-inline: 0px;
+color: var(--text-color);
+}
+
+
+
+
+
+ 
